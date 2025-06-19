@@ -1,4 +1,4 @@
-<h1 align="center">💥 BE-KI-ITK</h1>
+<h1 align="center">BE-KI-ITK</h1>
 
 <p align="center">
   <i>Empowering Innovation, Accelerating Impact, Unleashing Potential</i>
@@ -66,23 +66,22 @@
    ```
 
 3. Create a `.env` file in the root of your project with the following content:
+    ```env
+    # Server configuration
+    PORT=3000
+    HOST=localhost
 
-   ```env
-   # Server configuration
-   PORT=3000
-   HOST=localhost
+    # Database configuration
+    DB_USERNAME=your_db_username
+    DB_PASSWORD=your_db_password
+    DB_HOST=localhost
+    DB_PORT=5432
 
-   # Database configuration
-   DB_USERNAME=your_db_username
-   DB_PASSWORD=your_db_password
-   DB_HOST=localhost
-   DB_PORT=5432
-
-   # JWT & Security
-   PASSWORD_HASH=your_password_hash_key
-   SALT_ROUNDS=10
-   JWT_SECRET=your_jwt_secret_key
-   ```
+    # JWT & Security
+    PASSWORD_HASH=your_password_hash_key
+    SALT_ROUNDS=10
+    JWT_SECRET=your_jwt_secret_key
+    ```
 
 4. Setup the database
    ```bash
@@ -94,29 +93,28 @@
 ### Running the app
 
 1. To start the server in production mode:
-   ```bash
-   npm start
-   ```
+    ```bash
+    npm start
+    ```
 2. To start the server in development mode with auto-reload:
-   ```bash
-   npm run dev
-   ```
-3. To start the server in production mode:
-   ```bash
-   npm start
-   ```
+    ```bash
+    npm run dev
+    ```
+1. To start the server in production mode:
+    ```bash
+    npm start
+    ```
 
 ### Other useful scripts
-
 - Drop the database:
-  ```bash
-  npm run db:drop
-  ```
+    ```bash
+    npm run db:drop
+    ```
 - Undo all migrations::
-  ```bash
-  npm run db:migrate:undo
-  ```
+    ```bash
+    npm run db:migrate:undo
+    ```
 - Run all migrations and seeds:
-  ```bash
-  npm run db:init
-  ```
+    ```bash
+    npm run db:init
+    ```
